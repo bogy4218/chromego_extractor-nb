@@ -45,24 +45,24 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: 🇷🇺 RU-Hysteria | 1-0
-  type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: 🇷🇺 RU-Hysteria2 | 0-0
   type: hysteria2
-  server: hy2.694463.xyz
-  port: 10011
+  server: 45.129.2.108
+  port: 50850
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇷🇺 RU-Hysteria2 | 1-0
+  type: hysteria2
+  server: 46.17.41.217
+  port: 30033
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇷🇺 RU-Hysteria2 | 2-0
+  type: hysteria2
+  server: 45.129.2.248
+  port: 23579
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
@@ -90,8 +90,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -102,8 +103,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 巴哈姆特
   type: select
@@ -113,8 +115,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -124,8 +127,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -135,8 +139,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -146,8 +151,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📲 电报信息
   type: select
@@ -157,8 +163,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -168,8 +175,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -179,8 +187,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -190,8 +199,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -201,8 +211,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -212,8 +223,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 - name: 🎯 全球直连
   type: select
@@ -232,8 +244,9 @@ proxy-groups:
   - 🇺🇸 US-hysteria | 6-1
   - 🇺🇸 US-hysteria | 7-1
   - 🇷🇺 RU-hysteria | 8-1
-  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
+  - 🇷🇺 RU-Hysteria2 | 1-0
+  - 🇷🇺 RU-Hysteria2 | 2-0
   - 🇨🇳 TW-vless | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
