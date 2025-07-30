@@ -41,6 +41,18 @@ proxies:
   skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
+- name: 🇺🇸 US-hysteria | 7-1
+  type: hysteria
+  server: 108.181.24.77
+  port: 11512
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: 🇳🇱 NL-hysteria | 8-1
   type: hysteria
   server: 109.104.153.91
@@ -83,6 +95,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -93,6 +106,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -103,6 +117,7 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -113,6 +128,7 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -123,6 +139,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -133,6 +150,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -143,6 +161,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -153,6 +172,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -163,6 +183,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -173,6 +194,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -183,6 +205,7 @@ proxy-groups:
   - 🚀 节点选择
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -193,6 +216,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -203,6 +227,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -213,6 +238,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
@@ -232,6 +258,7 @@ proxy-groups:
   - 🎯 全球直连
   - ☁ WARP
   - 🇺🇸 US-hysteria | 6-1
+  - 🇺🇸 US-hysteria | 7-1
   - 🇳🇱 NL-hysteria | 8-1
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇨🇳 TW-vless | 0-0
